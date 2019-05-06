@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>collage</title>
+</head>
+<style>
+	.wrap{width: 800px; height: 3119px; margin: auto; background-image: url("background.png");}
+
+	section{height: 500px; margin-bottom: 30px; position: relative;
+		perspective: 500px;}
+
+	.people{position: absolute; z-index: 2;}
+	.blur{width: 500px; position: absolute;}
+	.up{position: fixed;  z-index: 1;}
+	.down{position: fixed; z-index: 1;}
+	.one{width:800px; position: absolute;}
+	.check{width: 50px; position: absolute;2}
+	.two{width: 600px; position: absolute;}
+	.mini{width: 80px; position: absolute; z-index: 1;}
+	.threebig{width: 200px; position: absolute; z-index: 2;}
+	.three{width: 800px; position: absolute;} 
+	
+
+
+
+</style>
+<body>
+
+	<div class="wrap" >
+		<section class="up">
+			<img src="upshu.png" style="width:800px; left:0px; top:0px;">
+	
+		</section>
+		<section class="people">
+			<img src="blur.png" class="blur" style="left: 1px; top: 1100px">
+
+	
+		</section>
+
+		<section class="one">
+			<img src="1.jpg" class="one" style="left: 0px; top: 300px;">
+			<img src="check.png" class="check" style="left: 500px top: 1500px;">
+
+			<img src="2.jpg" class="two" style=" left: 200px; top: 800px; ">
+
+
+			<img src="three-big.png" class="threebig" style=" left: 20px; top: 2300px;">
+			<img src="3-mini.png" class="mini" style="left: 570px; top: 2300px;">
+			<img src="3.jpg" class="three" style="right: 0px; top: 2000px;">
+
+			<img src="down.png" class="down" style="width:800px; left: 0px; top: 2550px;">
+		</section>
+		
+	</div>
+</body>
+</html>
