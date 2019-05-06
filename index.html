@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>collage</title>
+</head>
+<style>
+
+	.wrap{width: 800px; height: 3119px; margin: auto; background: lightyellow;}
+
+	section{height: 500px; margin-bottom: 30px; position: relative;
+		perspective: 500px;}
+	.up{position: fixed;  z-index: 1;}
+	.down{position: fixed; z-index: 1;}
+	.one{width:800px; position: absolute;}
+	.two{width: 400px; position: absolute;}
+	.three{width: 800px; position: absolute;}
+	.blur{width: 480px; position: absolute;
+
+		 animation: ro infinite 5s alternate cubic-bezier(.44,.26,.66,1.01); display: block; }
+	@keyframes ro{
+		from{}
+		to{right: 10px;}
+		}
+	}
+
+	.mini{width: 100px; position: absolute;}
+</style>
+<body>
+	<div class="wrap" >
+		<section class="up" class="up">
+			<img src="upshu.png" style="width:800px; left:0px; top:50px;">
+	
+		</section>
+		<section class="one">
+			<img src="1.jpg" class="one" style="left: 0px; top: 300px;">
+			<img src="blur.png" class="blur" style="left: 10px; top: 600px">
+			<img src="2.jpg" class="two" style=" left: 300px; bottom: 800px; ">
+			<img src="3.jpg" class="three" style="right: 0px; top: 2700px;">
+			<img src="3-mini" class="mini" style="left: 200px; top: 1000px;">
+			<img src="down.png" class="down" style="width:800px; left: 0px; top: 3119px;">
+		</section>
+		
+	</div>
+</body>
+</html>
